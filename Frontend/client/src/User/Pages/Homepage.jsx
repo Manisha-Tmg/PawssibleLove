@@ -4,6 +4,7 @@ import milly from "../../assets/Milly.jpg";
 import coco from "../../assets/Simba.jpg";
 import dora from "../../assets/Coco.jpeg";
 import "../Css/Homepage/Homepage.css";
+import Footer from "../Components/Footer";
 
 const Home = () => {
   const pets = [
@@ -44,12 +45,13 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Call to Action */}
+      {/* Call to Action
       <section className="cta">
         <h2>Ready to Make a Difference?</h2>
         <p>Help a pet find their forever home. Adopt today.</p>
         <Link to="/about-adoption">Learn More About Adoption</Link>
-      </section>
+      </section> */}
+      <Footer />
     </>
   );
 };
