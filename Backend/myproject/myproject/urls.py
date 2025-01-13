@@ -7,7 +7,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     path('api/pets/',PetCreateSet.as_view(),name='pet-list-create'),
-    path('api/pets/<int:pet_id',PetDetailView.as_view(),name='pet-details')
+    path('api/pets/<int:pet_id>',PetDetailView.as_view(),name='pet-details')
 ]
 
 

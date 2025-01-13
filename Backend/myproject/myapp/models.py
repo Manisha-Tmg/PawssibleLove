@@ -7,9 +7,13 @@ class Pet(models.Model):
     age = models.IntegerField()
     color = models.CharField(max_length=30)
     description = models.TextField()
+    # pet_image = 
     adopted = models.BooleanField(default=False)
-    # name = models.CharField(max_length=100)
+    is_delated = models.BooleanField(default=False)
 
 
 def __str__(self):
     return self.name
+    
+
+class User
