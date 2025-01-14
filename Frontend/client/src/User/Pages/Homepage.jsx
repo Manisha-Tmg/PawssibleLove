@@ -28,6 +28,18 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Featured Pets */}
+      <section className="featured">
+        <h2>Meet Our Featured Pets</h2>
+        <div className="card-grid">
+          {pets.map((pet, idx) => (
+            <div className="card" key={idx}>
+              <img src={pet.image} alt={pet.name} />
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Call to Action
       <section className="cta">
         <h2>Ready to Make a Difference?</h2>
