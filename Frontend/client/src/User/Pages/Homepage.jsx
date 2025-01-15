@@ -35,6 +35,11 @@ const Home = () => {
           {pets.map((pet, idx) => (
             <div className="card" key={idx}>
               <img src={pet.image} alt={pet.name} />
+              <div className="card-body">
+                <h3>{pet.name}</h3>
+                <p>{pet.breed}</p>
+                <Link to="/find-pets">View More →</Link>
+              </div>
             </div>
           ))}
         </div>
