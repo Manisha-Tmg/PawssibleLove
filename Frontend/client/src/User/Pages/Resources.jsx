@@ -19,6 +19,16 @@ const Resources = () => {
             bonding with your furry friends.
           </p>
         </section>
+
+        <section className="mb-8">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+            Training & Behavior
+          </h2>
+          <p className="text-gray-600">
+            Learn how to train your pets and understand their behavior for a
+            harmonious relationship.
+          </p>
+        </section>
       </div>
     </>
   );
