@@ -29,6 +29,16 @@ const Resources = () => {
             harmonious relationship.
           </p>
         </section>
+
+        <section className="mb-8">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+            Health & Safety
+          </h2>
+          <p className="text-gray-600">
+            Tips on keeping your pets healthy and safe — from vaccinations to
+            toxic foods to avoid.
+          </p>
+        </section>
       </div>
     </>
   );
