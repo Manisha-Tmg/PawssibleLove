@@ -38,6 +38,15 @@ const Resources = () => {
             Tips on keeping your pets healthy and safe — from vaccinations to
             toxic foods to avoid.
           </p>
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+              Local Vet & Shelter Directory
+            </h2>
+            <p className="text-gray-600">
+              Discover trusted veterinary clinics and adoption shelters in your
+              area.
+            </p>
+          </section>
         </section>
       </div>
     </>
