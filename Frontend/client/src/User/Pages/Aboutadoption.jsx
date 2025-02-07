@@ -20,6 +20,20 @@ const Aboutadoption = () => {
           </p>
         </div>
       </section>
+      {/* Why Adopt Section */}
+      <section className="py-16 px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-800 mb-4">
+              Why Choose Adoption?
+            </h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              Pet adoption is a rewarding experience that benefits both you and
+              the animals in need.
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
