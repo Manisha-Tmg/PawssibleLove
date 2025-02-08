@@ -32,6 +32,24 @@ const Aboutadoption = () => {
               the animals in need.
             </p>
           </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {benefits.map((benefit, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group"
+              >
+                <div className="flex justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  {benefit.icon}
+                </div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-4 text-center">
+                  {benefit.title}
+                </h3>
+                <p className="text-gray-600 text-center leading-relaxed">
+                  {benefit.description}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </div>
