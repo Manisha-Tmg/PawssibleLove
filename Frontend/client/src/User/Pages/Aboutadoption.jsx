@@ -52,6 +52,142 @@ const Aboutadoption = () => {
           </div>
         </div>
       </section>
+      {/* Adoption Process Section */}
+      <section className="py-16 px-6 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-800 mb-4">
+              Adoption Process
+            </h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              Our simple 5-step process ensures the perfect match between pets
+              and families.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Steps List */}
+            <div className="space-y-4">
+              {adoptionSteps.map((step, index) => (
+                <div
+                  key={index}
+                  className={`p-6 rounded-xl cursor-pointer transition-all duration-300 ${
+                    activeStep === index
+                      ? "bg-blue-600 text-white shadow-lg"
+                      : "bg-gray-50 hover:bg-gray-100"
+                  }`}
+                  onClick={() => setActiveStep(index)}
+                >
+                  <div className="flex items-center space-x-4">
+                    <div
+                      className={`p-3 rounded-full ${
+                        activeStep === index
+                          ? "bg-white/20"
+                          : "bg-blue-600 text-white"
+                      }`}
+                    >
+                      {step.icon}
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-semibold mb-2">
+                        {step.title}
+                      </h3>
+                      <p
+                        className={
+                          activeStep === index
+                            ? "text-white/90"
+                            : "text-gray-600"
+                        }
+                      >
+                        {step.description}
+                      </p>
+                    </div>
+                    <div
+                      className={`text-2xl font-bold ${
+                        activeStep === index ? "text-white" : "text-gray-300"
+                      }`}
+                    >
+                      {index + 1}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Step Details */}
+            <div className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl shadow-lg">
+              <div className="flex items-center space-x-4 mb-6">
+                <div className="p-4 bg-blue-600 text-white rounded-full">
+                  {adoptionSteps[activeStep].icon}
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-800">
+                    {adoptionSteps[activeStep].title}
+                  </h3>
+                  <p className="text-gray-600">
+                    Step {activeStep + 1} of {adoptionSteps.length}
+                  </p>
+                </div>
+              </div>
+              <p className="text-gray-700 leading-relaxed text-lg">
+                {adoptionSteps[activeStep].details}
+              </p>
+              <div className="mt-6 flex justify-between">
+                <button
+                  onClick={() => setActiveStep(Math.max(0, activeStep - 1))}
+                  disabled={activeStep === 0}
+                  className="px-6 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  Previous
+                </button>
+                <button
+                  onClick={() =>
+                    setActiveStep(
+                      Math.min(adoptionSteps.length - 1, activeStep + 1)
+                    )
+                  }
+                  disabled={activeStep === adoptionSteps.length - 1}
+                  className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center space-x-2"
+                >
+                  <span>Next</span>
+                  <ArrowRight className="w-4 h-4" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Requirements Section */}
+      <section className="py-16 px-6 bg-gray-100">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-bold text-gray-800 mb-8">
+            Adoption Requirements
+          </h2>
+          <p className="text-gray-600 text-lg mb-12 max-w-2xl mx-auto">
+            To ensure the best outcomes for both pets and families, we have
+            established these basic requirements.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            {requirements.map((requirement, index) => (
+              <div
+                key={index}
+                className="flex items-center space-x-4 bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
+              >
+                <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0" />
+                <span className="text-gray-700 text-left">{requirement}</span>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-12">
+            <button className="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-all duration-300 font-semibold text-lg shadow-lg">
+              Start Your Application
+            </button>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
