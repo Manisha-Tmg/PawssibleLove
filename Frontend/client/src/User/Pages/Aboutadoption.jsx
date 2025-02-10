@@ -188,6 +188,53 @@ const Aboutadoption = () => {
           </div>
         </div>
       </section>
+      {/* FAQ Section */}
+      <section className="py-16 px-6 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-800 mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-gray-600 text-lg">
+              Get answers to common questions about the adoption process.
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            {faqs.map((faq, index) => (
+              <div
+                key={index}
+                className="bg-gray-50 rounded-xl overflow-hidden"
+              >
+                <button
+                  className="w-full p-6 text-left hover:bg-gray-100 transition-colors duration-300 flex justify-between items-center"
+                  onClick={() =>
+                    setExpandedFaq(expandedFaq === index ? null : index)
+                  }
+                >
+                  <span className="text-lg font-semibold text-gray-800">
+                    {faq.question}
+                  </span>
+                  <div
+                    className={`transform transition-transform duration-300 ${
+                      expandedFaq === index ? "rotate-180" : ""
+                    }`}
+                  >
+                    <ArrowRight className="w-5 h-5 text-gray-500 rotate-90" />
+                  </div>
+                </button>
+                {expandedFaq === index && (
+                  <div className="px-6 pb-6">
+                    <p className="text-gray-600 leading-relaxed">
+                      {faq.answer}
+                    </p>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
