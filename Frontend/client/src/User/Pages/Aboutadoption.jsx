@@ -235,6 +235,14 @@ const Aboutadoption = () => {
           </div>
         </div>
       </section>
+      {/* Call to Action */}
+      <section className="py-20 px-6 bg-blue-600 text-white text-center">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            Ready to Find Your Perfect Match?
+          </h2>
+        </div>
+      </section>
     </div>
   );
 };
