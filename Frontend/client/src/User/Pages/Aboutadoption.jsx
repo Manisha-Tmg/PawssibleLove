@@ -241,6 +241,10 @@ const Aboutadoption = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Ready to Find Your Perfect Match?
           </h2>
+          <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+            Browse our available pets and start your adoption journey today.
+            Every pet deserves a loving home.
+          </p>
         </div>
       </section>
     </div>
