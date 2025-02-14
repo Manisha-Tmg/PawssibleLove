@@ -45,6 +45,14 @@ const Aboutadoption = () => {
         "Sign the adoption contract, pay the adoption fee, and receive all medical records and care instructions.",
     },
   ];
+  const benefits = [
+    {
+      icon: <Heart className="w-12 h-12 text-blue-600" />,
+      title: "Save a Life",
+      description:
+        "Every adoption opens space for another pet in need and gives a deserving animal a second chance at happiness.",
+    },
+  ];
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
