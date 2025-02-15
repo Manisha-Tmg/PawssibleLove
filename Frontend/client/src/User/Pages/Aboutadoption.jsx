@@ -1,6 +1,8 @@
 import React from "react";
 
 const Aboutadoption = () => {
+  const [activeStep, setActiveStep] = useState(0);
+  const [expandedFaq, setExpandedFaq] = useState(null);
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
