@@ -3,6 +3,16 @@ import React from "react";
 const Aboutadoption = () => {
   const [activeStep, setActiveStep] = useState(0);
   const [expandedFaq, setExpandedFaq] = useState(null);
+  const adoptionSteps = [
+    {
+      icon: <Heart className="w-8 h-8" />,
+      title: "Browse & Connect",
+      description:
+        "Explore our available pets and find one that matches your lifestyle and preferences.",
+      details:
+        "Use our advanced filters to find pets by age, size, breed, and temperament. Each pet profile includes photos, personality traits, and care requirements.",
+    },
+  ];
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
