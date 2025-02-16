@@ -12,6 +12,14 @@ const Aboutadoption = () => {
       details:
         "Use our advanced filters to find pets by age, size, breed, and temperament. Each pet profile includes photos, personality traits, and care requirements.",
     },
+    {
+      icon: <FileText className="w-8 h-8" />,
+      title: "Submit Application",
+      description:
+        "Complete our comprehensive adoption application to help us understand your needs.",
+      details:
+        "Provide information about your living situation, experience with pets, and what you're looking for in a companion.",
+    },
   ];
   return (
     <div className="min-h-screen bg-gray-50">
