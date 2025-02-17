@@ -28,6 +28,14 @@ const Aboutadoption = () => {
       details:
         "Spend quality time with the pet to ensure compatibility. Bring family members and current pets if applicable.",
     },
+    {
+      icon: <Shield className="w-8 h-8" />,
+      title: "Home Check",
+      description:
+        "Our team may conduct a brief home visit to ensure a safe environment.",
+      details:
+        "We'll verify that your home is pet-ready and address any safety concerns or questions you might have.",
+    },
   ];
   return (
     <div className="min-h-screen bg-gray-50">
