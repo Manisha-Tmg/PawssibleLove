@@ -20,6 +20,14 @@ const Aboutadoption = () => {
       details:
         "Provide information about your living situation, experience with pets, and what you're looking for in a companion.",
     },
+    {
+      icon: <Users className="w-8 h-8" />,
+      title: "Meet & Greet",
+      description:
+        "Schedule a visit to meet your potential new family member in person.",
+      details:
+        "Spend quality time with the pet to ensure compatibility. Bring family members and current pets if applicable.",
+    },
   ];
   return (
     <div className="min-h-screen bg-gray-50">
