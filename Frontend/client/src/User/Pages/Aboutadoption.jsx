@@ -36,6 +36,14 @@ const Aboutadoption = () => {
       details:
         "We'll verify that your home is pet-ready and address any safety concerns or questions you might have.",
     },
+    {
+      icon: <CheckCircle className="w-8 h-8" />,
+      title: "Finalize Adoption",
+      description:
+        "Complete the adoption paperwork and welcome your new companion home!",
+      details:
+        "Sign the adoption contract, pay the adoption fee, and receive all medical records and care instructions.",
+    },
   ];
   return (
     <div className="min-h-screen bg-gray-50">
