@@ -52,6 +52,12 @@ const Aboutadoption = () => {
       description:
         "Every adoption opens space for another pet in need and gives a deserving animal a second chance at happiness.",
     },
+    {
+      icon: <DollarSign className="w-12 h-12 text-green-600" />,
+      title: "Cost-Effective",
+      description:
+        "Adoption fees are significantly lower than buying from breeders, and many pets come spayed/neutered and vaccinated.",
+    },
   ];
   return (
     <div className="min-h-screen bg-gray-50">
