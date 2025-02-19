@@ -4,6 +4,7 @@ import Home from "./User/Pages/HomePage";
 import Resources from "./User/Pages/Resources";
 import "./index.css";
 import SuccessStories from "./User/Pages/SuccessStories";
+import Aboutadoption from "./User/Pages/Aboutadoption";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/success-stories" element={<SuccessStories />} />
+          <Route path="/about-adoption" element={<Aboutadoption />} />
         </Routes>
       </BrowserRouter>
     </>
