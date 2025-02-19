@@ -64,6 +64,12 @@ const Aboutadoption = () => {
       description:
         "Many of our pets are house-trained and have basic obedience skills, making the transition easier.",
     },
+    {
+      icon: <Users className="w-12 h-12 text-gray-700" />,
+      title: "Ongoing Support",
+      description:
+        "Our team provides lifetime support with training tips, behavioral guidance, and medical advice.",
+    },
   ];
   return (
     <div className="min-h-screen bg-gray-50">
