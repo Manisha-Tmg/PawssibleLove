@@ -58,6 +58,12 @@ const Aboutadoption = () => {
       description:
         "Adoption fees are significantly lower than buying from breeders, and many pets come spayed/neutered and vaccinated.",
     },
+    {
+      icon: <Award className="w-12 h-12 text-gray-600" />,
+      title: "Pre-Trained Companions",
+      description:
+        "Many of our pets are house-trained and have basic obedience skills, making the transition easier.",
+    },
   ];
   return (
     <div className="min-h-screen bg-gray-50">
