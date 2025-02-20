@@ -71,6 +71,14 @@ const Aboutadoption = () => {
         "Our team provides lifetime support with training tips, behavioral guidance, and medical advice.",
     },
   ];
+  const requirements = [
+    "Must be 21 years or older",
+    "Valid government-issued ID required",
+    "Landlord approval if renting property",
+    "All household members must meet the pet",
+    "Current pets must be up-to-date on vaccinations",
+    "Commitment to provide lifetime care",
+  ];
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
