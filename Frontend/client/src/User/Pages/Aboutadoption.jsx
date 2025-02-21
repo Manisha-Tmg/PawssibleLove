@@ -79,6 +79,13 @@ const Aboutadoption = () => {
     "Current pets must be up-to-date on vaccinations",
     "Commitment to provide lifetime care",
   ];
+  const faqs = [
+    {
+      question: "How long does the adoption process take?",
+      answer:
+        "The adoption process typically takes 3-7 days from application submission to taking your pet home. This allows time for processing, meet-and-greets, and any necessary home checks.",
+    },
+  ];
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
