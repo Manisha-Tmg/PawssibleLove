@@ -85,6 +85,11 @@ const Aboutadoption = () => {
       answer:
         "The adoption process typically takes 3-7 days from application submission to taking your pet home. This allows time for processing, meet-and-greets, and any necessary home checks.",
     },
+    {
+      question: "What is included in the adoption fee?",
+      answer:
+        "Adoption fees include spaying/neutering, current vaccinations, microchip identification, initial health exam, and a starter kit with food, toys, and care instructions.",
+    },
   ];
   return (
     <div className="min-h-screen bg-gray-50">
