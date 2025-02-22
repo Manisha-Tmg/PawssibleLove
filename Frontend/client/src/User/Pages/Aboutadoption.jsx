@@ -90,6 +90,11 @@ const Aboutadoption = () => {
       answer:
         "Adoption fees include spaying/neutering, current vaccinations, microchip identification, initial health exam, and a starter kit with food, toys, and care instructions.",
     },
+    {
+      question: "Can I return a pet if it doesn't work out?",
+      answer:
+        "Yes, we have a 30-day return policy. We want both you and your pet to be happy, and we'll work with you to address any concerns or facilitate a return if necessary.",
+    },
   ];
   return (
     <div className="min-h-screen bg-gray-50">
