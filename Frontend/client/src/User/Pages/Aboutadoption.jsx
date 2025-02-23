@@ -100,6 +100,11 @@ const Aboutadoption = () => {
       answer:
         "We offer a 2-week foster-to-adopt program for certain pets, allowing you to take them home while finalizing the adoption process.",
     },
+    {
+      question: "What if I have other pets at home?",
+      answer:
+        "We encourage meet-and-greets between your current pets and potential adoptees. Our staff can provide guidance on proper introductions and compatibility assessments.",
+    },
   ];
   return (
     <div className="min-h-screen bg-gray-50">
