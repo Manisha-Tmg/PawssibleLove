@@ -95,6 +95,11 @@ const Aboutadoption = () => {
       answer:
         "Yes, we have a 30-day return policy. We want both you and your pet to be happy, and we'll work with you to address any concerns or facilitate a return if necessary.",
     },
+    {
+      question: "Do you offer trial periods?",
+      answer:
+        "We offer a 2-week foster-to-adopt program for certain pets, allowing you to take them home while finalizing the adoption process.",
+    },
   ];
   return (
     <div className="min-h-screen bg-gray-50">
