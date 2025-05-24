@@ -9,3 +9,7 @@ class PetCreateSet(generics.ListCreateAPIView):
     serializer_class = PetSerializer
 
 
+class PetDetailView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Pet.objects.all()
+    serializer_class = PetSerializer
+
