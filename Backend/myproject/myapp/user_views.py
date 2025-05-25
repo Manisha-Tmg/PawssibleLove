@@ -1,3 +1,11 @@
-# from rest_framework.views import APIView
+from rest_framework.views import APIView
+from rest_framework import generics
+from .models import Pet
+from .serializer import PetSerializer
 
-# class UsgerRegistration(APIView):
+
+class PetCreateSet(generics.ListCreateAPIView):
+    queryset = Pet.objects.all()
+    serializer_class = PetSerializer
+
+
