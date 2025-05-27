@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'myapp',
     'rest_framework',
     'rest_framework.authtoken',
-    'django.contrib.auth',
 ]
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
