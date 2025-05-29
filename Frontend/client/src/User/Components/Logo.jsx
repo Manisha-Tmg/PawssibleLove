@@ -1,11 +1,11 @@
 import React from "react";
-import logo from "../../assets/Brand.png";
-import "../Css/Logo.Css";
+import logo from "../../assets/Brandd.png";
+import "../Css/Logo/Logo.css";
 
 const Logo = () => {
   return (
-    <div className="iconn">
-      <img className="imagee" src={logo}></img>
+    <div className="logo-container">
+      <img src={logo} alt="Brand Logo" className="logo-image" />
     </div>
   );
 };

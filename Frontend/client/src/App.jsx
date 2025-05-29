@@ -1,13 +1,14 @@
+import { BrowserRouter } from "react-router-dom";
+// import "../src/output.css";
 import Navbar from "./User/Components/Navbar";
-import "../src/output.css";
+import Home from "./User/Pages/HomePage";
 
 function App() {
   return (
     <>
-      {/* <Navbar /> */}
-      <button className="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-500">
-        Click Me
-      </button>
+      <BrowserRouter>
+        <Home />
+      </BrowserRouter>
     </>
   );
 }

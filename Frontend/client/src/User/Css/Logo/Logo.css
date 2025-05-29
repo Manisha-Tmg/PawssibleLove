@@ -1,0 +1,19 @@
+.logo-container {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo-image {
+  height: 3rem;
+  margin: auto;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-text {
+  margin-left: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+}

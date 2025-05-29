@@ -1,0 +1,146 @@
+/* Navbar Container */
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 100;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+/* Left Side */
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: none;
+  margin-left: 24px;
+}
+
+.nav-link {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #f97316;
+}
+
+/* Right Side */
+.nav-actions {
+  display: none;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-blue {
+  background-color: #2563eb;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+.btn-orange {
+  background-color: #f97316;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+.menu-btn {
+  display: flex;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  background-color: white;
+  border-top: 1px solid #ddd;
+  padding: 10px;
+}
+
+.mobile-link {
+  display: block;
+  padding: 10px 16px;
+  text-decoration: none;
+  color: #333;
+}
+
+.mobile-link:hover {
+  background-color: #f3f4f6;
+}
+
+.mobile-actions {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+/* Bottom Nav */
+.mobile-bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  background-color: white;
+  border-top: 1px solid #ddd;
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.bottom-nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-size: 12px;
+}
+
+.bottom-nav-link:hover {
+  color: #f97316;
+}
+
+/* Responsive Rules */
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+  }
+
+  .nav-actions {
+    display: flex;
+  }
+
+  .menu-btn,
+  .mobile-menu,
+  .mobile-bottom-nav {
+    display: none;
+  }
+}
