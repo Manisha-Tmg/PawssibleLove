@@ -13,6 +13,8 @@ import {
   Award,
   ArrowRight,
 } from "lucide-react";
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 
 const AboutAdoption = () => {
   const [activeStep, setActiveStep] = useState(0);
@@ -127,6 +129,7 @@ const AboutAdoption = () => {
 
   return (
     <>
+      <Navbar />
       <div className="min-h-screen bg-gray-50">
         {/* Hero Section */}
         <section className="relative py-20 px-6 text-center">
@@ -245,6 +248,7 @@ const AboutAdoption = () => {
           </div>
         </section>
       </div>
+      <Footer />
     </>
   );
 };

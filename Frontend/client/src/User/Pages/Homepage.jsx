@@ -4,6 +4,7 @@ import milly from "../../assets/Milly.jpg";
 import coco from "../../assets/Simba.jpg";
 import dora from "../../assets/Coco.jpeg";
 import "../Css/Homepage/Homepage.css";
+import Footer from "../Components/Footer";
 
 const Home = () => {
   const pets = [

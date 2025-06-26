@@ -16,4 +16,5 @@ def __str__(self):
     return self.name
     
 
-class User
+class CustomUser(AbstractUser):
+    User_Roles = (('adopter','Adopter'),('admin','Admin'))

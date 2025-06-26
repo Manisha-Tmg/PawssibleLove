@@ -19,8 +19,8 @@ const Navbar = () => {
                 <Link to="/" className="nav-link">
                   Home
                 </Link>
-                <Link to="/find-pets" className="nav-link">
-                  Find Pets
+                <Link to="/products" className="nav-link">
+                  Products
                 </Link>
                 <Link to="/about-adoption" className="nav-link">
                   About Adoption
@@ -80,25 +80,6 @@ const Navbar = () => {
           </div>
         )}
       </nav>
-
-      <div className="mobile-bottom-nav">
-        <Link to="/" className="bottom-nav-link">
-          <Home size={20} />
-          <span>Home</span>
-        </Link>
-        <Link to="/search" className="bottom-nav-link">
-          <Search size={20} />
-          <span>Search</span>
-        </Link>
-        <Link to="/favorites" className="bottom-nav-link">
-          <Heart size={20} />
-          <span>Favorites</span>
-        </Link>
-        <Link to="/profile" className="bottom-nav-link">
-          <User size={20} />
-          <span>Profile</span>
-        </Link>
-      </div>
     </div>
   );
 };
