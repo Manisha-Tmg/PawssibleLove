@@ -1,0 +1,40 @@
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 100;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+
+  height: 64px;
+}
+
+/* Left Side */
+.navbar-left {
+  justify-content: right;
+}
+
+.nav-links {
+  justify-content: right;
+  margin-left: 300px;
+}
+
+.nav-link {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-link.active {
+  color: #f97316;
+}

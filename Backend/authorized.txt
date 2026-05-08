@@ -1,0 +1,20 @@
+admin=> {
+    create=>Dog
+    read=>product,user,dog,Order
+    update=>product,dog,Order Status,profile
+    delete=>product,user,dog,reviews,seller
+}
+
+seller=>{
+    create=>product
+    read=>product,user,dog,Order,reviews
+    update=>product,profile
+    delete=>product
+
+}
+customer=>{
+    create=>register
+    read=>product,dog,Order,reviews
+    update=>profile
+    delete=>reviews
+}
